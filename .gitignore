@@ -26,3 +26,9 @@ package-lock.json
 yarn.lock
 
 .eslintcache
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
