@@ -38,6 +38,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
+    "playwright": "^1.26.0",
     "prettier": "^2.2.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
@@ -57,7 +58,7 @@
     "lint-staged:js": "eslint --cache --fix --ext .js,.jsx",
     "lint-staged:style": "stylelint --fix --syntax scss",
     "lint-staged:prettier": "prettier -c --write",
-    "cypress": "cypress run --headless --browser chrome"
+    "playwright": "npx cucumber-js --publish"
   },
   "eslintConfig": {
     "extends": [

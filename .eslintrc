@@ -12,7 +12,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["cypress", "eslint-comments", "react-hooks"],
+  "plugins": ["eslint-comments", "react-hooks"],
   "rules": {
     "react/jsx-wrap-multilines": 0,
     "react/prop-types": 0,
@@ -31,8 +31,7 @@
           "**/**.test.js",
           "**/_mock.{ts,js}",
           "**/craco.config.js",
-          "**/cypress.config.js",
-          "**/cypress/**/**.{js,mjs}"
+          "**/features/**/**.js"
         ]
       }
     ],
