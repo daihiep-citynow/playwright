@@ -31,7 +31,7 @@
           "**/**.test.js",
           "**/_mock.{ts,js}",
           "**/craco.config.js",
-          "**/features/**/**.{mjs,js}"
+          "**/playwright/**/**.js"
         ]
       }
     ],

@@ -2,6 +2,23 @@
   "name": "citynow-talentfresher-test",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --coverage --watchAll",
+    "eject": "craco eject",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:js": "eslint --cache --fix --ext .js,.jsx ./src",
+    "lint:style": "stylelint --fix \"src/**/*.scss\" --syntax scss",
+    "prettier": "prettier -c \"**/src/**\" --write",
+    "lint-staged:js": "eslint --cache --fix --ext .js,.jsx",
+    "lint-staged:style": "stylelint --fix --syntax scss",
+    "lint-staged:prettier": "prettier -c --write",
+    "pw": "npx playwright test",
+    "pw:codegen": "npx playwright codegen --viewport-size=1920,1080 http://localhost:3000",
+    "pw:mobile": "npx playwright test playwright/mobile.spec.js",
+    "pw:multi": "npx playwright test playwright/multi.spec.js"
+  },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@testing-library/react": "^12.1.2",
@@ -45,20 +62,6 @@
     "stylelint-prettier": "^1.2.0",
     "webpack-bundle-analyzer": "^3.6.0",
     "webpackbar": "^4.0.0"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test --coverage --watchAll",
-    "eject": "craco eject",
-    "lint": "npm run lint:js && npm run lint:style",
-    "lint:js": "eslint --cache --fix --ext .js,.jsx ./src",
-    "lint:style": "stylelint --fix \"src/**/*.scss\" --syntax scss",
-    "prettier": "prettier -c \"**/src/**\" --write",
-    "lint-staged:js": "eslint --cache --fix --ext .js,.jsx",
-    "lint-staged:style": "stylelint --fix --syntax scss",
-    "lint-staged:prettier": "prettier -c --write",
-    "playwright": "npx cucumber-js --publish"
   },
   "eslintConfig": {
     "extends": [
